@@ -1,0 +1,234 @@
+% Encoding: UTF-8
+
+# Reference frames
+
+@symbol{frCam,
+    name = {\ensuremath{\mathcal{\color{red}C}}},
+    description = {camera reference frame (potentially moving)},
+    identifier = {referenceFrames}
+}
+
+# Image formation
+
+@symbol{focalPoint,
+    name = {\ensuremath{F}},
+    description = {focal point},
+    identifier = {imageFormation}
+}
+
+@symbol{opticalCenter,
+    name = {\ensuremath{C}},
+    description = {optical center/center of projection},
+    identifier = {imageFormation}
+}
+
+@symbol{opticalAxis,
+    name = {\ensuremath{Z_c}},
+    description = {optical axis},
+    identifier = {imageFormation}
+}
+
+@symbol{focalLength,
+    name = {\ensuremath{f}},
+    description = {focal length},
+    identifier = {imageFormation}
+}
+
+@symbol{aperture,
+    name = {\ensuremath{L}},
+    description = {aperture},
+    identifier = {imageFormation}
+}
+
+@symbol{principalPoint,
+    name = {\ensuremath{O}},
+    description = {principal point},
+    identifier = {imageFormation}
+}
+
+@symbol{pt3d,
+    name = {\ensuremath{P}},
+    description = {arbitrary point in 3D space},
+    identifier = {imageFormation}
+}
+
+@symbol{pt2d,
+    name = {\ensuremath{p}},
+    description = {\gls{pt3d} projected onto image plane},
+    identifier = {imageFormation}
+}
+
+@symbol{pt2dRect,
+    name = {\ensuremath{p'}},
+    description = {\gls{pt3d} projected onto rectified image plane},
+    identifier = {imageFormation}
+}
+
+@symbol{vecPt2d_frPixel,
+    name = {\ensuremath{\bm{p}}},
+    description = {pixel frame position vector of \gls{pt2d}},
+    identifier = {imageFormation}
+}
+
+@symbol{vecPt2d_frPixel_norm,
+    name = {\ensuremath{\bar{\bm{p}}}},
+    description = {pixel frame position vector of \gls{pt2d} with unit-plane normalized coordinates},
+    identifier = {imageFormation}
+}
+
+@symbol{pixelConvFactorX,
+    name = {\ensuremath{k_u}},
+    description = {inverse of pixel size along $x$ (pixel conversion factor)},
+    identifier = {imageFormation}
+}
+
+@symbol{pixelConvFactorY,
+    name = {\ensuremath{k_v}},
+    description = {inverse of pixel size along $y$ (pixel conversion factor)},
+    identifier = {imageFormation}
+}
+
+@symbol{matK,
+    name = {\ensuremath{\bm{K}}},
+    description = {calibration/intrinsic parameter matrix},
+    identifier = {imageFormation}
+}
+
+# Calibration
+
+@symbol{matHomography,
+    name = {\ensuremath{\bm{H}}},
+    description = {homography matrix},
+    identifier = {calibration}
+}
+
+# Multiple view geometry
+
+@symbol{baseline,
+    name = {\ensuremath{b}},
+    description = {\gls{DEF_baseline}},
+    identifier = {multipleViewGeometry}
+}
+
+@symbol{vecPt2dRect_frPixel,
+    name = {\ensuremath{\bm{p}'}},
+    description = {pixel frame position vector of \gls{pt2dRect}},
+    identifier = {multipleViewGeometry}
+}
+
+@symbol{ptEpipole,
+    name = {\ensuremath{e}},
+    description = {epipole},
+    identifier = {multipleViewGeometry}
+}
+
+@symbol{vecEpipolarPlaneNormal,
+    name = {\ensuremath{\bm{n}}},
+    description = {epipolar plane normal vector},
+    identifier = {multipleViewGeometry}
+}
+
+@symbol{matEssential,
+    name = {\ensuremath{\bm{E}}},
+    description = {essential matrix},
+    identifier = {multipleViewGeometry}
+}
+
+@symbol{matFundamental,
+    name = {\ensuremath{\bm{F}}},
+    description = {fundamental matrix},
+    identifier = {multipleViewGeometry}
+}
+
+@symbol{vecPt2d_norm_frPixel,
+    name = {\ensuremath{\hat{\bm{p}}}},
+    description = {pixel frame position vector of \gls{pt2d} with coordinates normalized to range $[-1,1]\times[-1,1]$},
+    identifier = {multipleViewGeometry}
+}
+
+@symbol{matPoseCam,
+    name = {\ensuremath{\bm{C}}},
+    description = {camera pose (homogeneous transf.) matrix; composed of $\gls{matPsvRot}_{\gls{frCam}\gls{frW}}$ and $_{\gls{frCam}}\gls{vecTransl}_{\gls{frCam}\gls{frW}}$},
+    identifier = {multipleViewGeometry}
+}
+
+# Tracking
+
+@symbol{matIntensityTemplate,
+    name = {\ensuremath{\bm{T}}},
+    description = {pixel intensity matrix of template},
+    identifier = {tracking}
+}
+
+@symbol{vecfeature2d,
+    name = {\ensuremath{\bm{f}}},
+    description = {2D feature position vector (at position $\bm{x}$ in template)},
+    identifier = {tracking}
+}
+
+@symbol{matWarp,
+    name = {\ensuremath{\bm{W}}},
+    description = {transformation (warp)},
+    identifier = {tracking}
+}
+
+# Filtering
+
+@symbol{matIntensity,
+    name = {\ensuremath{\bm{I}}},
+    description = {pixel intensity matrix of original image},
+    identifier = {filtering}
+}
+
+@symbol{matIntensityFilt,
+    name = {\ensuremath{\bm{I}'}},
+    description = {pixel intensity matrix of filtered image},
+    identifier = {filtering}
+}
+
+@symbol{matFilter,
+    name = {\ensuremath{\bm{H}}},
+    description = {filter/kernel/mask/template matrix},
+    identifier = {filtering}
+}
+
+@symbol{matGaussianFilter,
+    name = {\ensuremath{\bm{G}_\sigma}},
+    description = {Gaussian filter with smoothing/blurring parameter $\sigma$},
+    identifier = {filtering}
+}
+
+# Feature detection
+
+@symbol{matSecondMoment,
+    name = {\ensuremath{\bm{M}}},
+    description = {second moment matrix},
+    identifier = {featureDetection}
+}
+
+@symbol{cornernessFn,
+    name = {\ensuremath{R}},
+    description = {cornerness function},
+    identifier = {featureDetection}
+}
+
+@symbol{magicNoHarris,
+    name = {\ensuremath{k}},
+    description = {magic number for Harris detector $\in[0.04,0.15]$},
+    identifier = {featureDetection}
+}
+
+# Visual inertial fusion
+
+@symbol{vecLandmark,
+    name = {\ensuremath{\bm{L}}},
+    description = {landmark},
+    identifier = {visualInertialFusion}
+}
+# Event based vision
+
+@symbol{contrastSensitivity,
+    name = {\ensuremath{C}},
+    description = {contrast sensitivity},
+    identifier = {eventBasedVision}
+}

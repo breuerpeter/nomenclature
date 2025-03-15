@@ -1,0 +1,83 @@
+% Encoding: UTF-8
+
+# Position
+
+@symbol{vecPos,
+    name = {\ensuremath{\bm{r}}},
+    description = {position vector},
+    identifier = {position}
+}
+
+# Velocity
+
+@symbol{vecAngVel,
+    name = {\ensuremath{\bm{\omega}}},
+    description = {angular velocity vector},
+    identifier = {velocity}
+}
+
+@symbol{vecLinVel,
+    name = {\ensuremath{\bm{v}}},
+    description = {inertial linear velocity vector; for example $\gls{vecLinVel}_P\equiv{}_{\gls{frI}}\dot{\gls{vecPos}}_{\gls{frIOrigin}P}$},
+    identifier = {velocity}
+}
+
+# Acceleration
+
+@symbol{vecLinAcc,
+    name = {\ensuremath{\bm{a}}},
+    description = {inertial linear acceleration vector; for example $\gls{vecLinAcc}_P\equiv{}_{\gls{frI}}\ddot{\gls{vecPos}}_{\gls{frIOrigin}P}$},
+    identifier = {acceleration}
+}
+
+# Quaternions
+
+@symbol{quat,
+    name = {\ensuremath{\mathbf{q}}},
+    description = {unit quaternion},
+    identifier = {quaternion}
+}
+
+@symbol{quatAtt,
+    name = {\ensuremath{\mathbf{q}_{\gls{frW}\gls{frB}}}},
+    description = {unit attitude quaternion},
+    identifier = {quaternion}
+}
+
+# Orientation
+
+@symbol{roll,
+    name = {\ensuremath{\phi}},
+    description = {roll angle},
+    identifier = {orientation}
+}
+
+@symbol{pitch,
+    name = {\ensuremath{\theta}},
+    description = {pitch angle},
+    identifier = {orientation}
+}
+
+@symbol{yaw,
+    name = {\ensuremath{\psi}},
+    description = {yaw angle},
+    identifier = {orientation}
+}
+
+@symbol{rollRate,
+    name = {\ensuremath{p}},
+    description = {roll rate: $x$ component of ${}_{\gls{frB}}\gls{vecAngVel}_{\gls{frW}\gls{frB}}$ (not $\dv{t}\gls{roll}$!)},
+    identifier = {orientation}
+}
+
+@symbol{pitchRate,
+    name = {\ensuremath{q}},
+    description = {pitch rate: $y$ component of ${}_{\gls{frB}}\gls{vecAngVel}_{\gls{frW}\gls{frB}}$ (not $\dv{t}\gls{pitch}$!)},
+    identifier = {orientation}
+}
+
+@symbol{yawRate,
+    name = {\ensuremath{r}},
+    description = {yaw rate: $z$ component of ${}_{\gls{frB}}\gls{vecAngVel}_{\gls{frW}\gls{frB}}$ (not $\dv{t}\gls{yaw}$!)},
+    identifier = {orientation}
+}

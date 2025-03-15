@@ -1,0 +1,25 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Commands
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% Vectors %%%
+% Arguments (in order): frame, vector letter/symbol, from, to
+\renewcommand{\vec}[4]{
+    \ensuremath{{}_{#1}\bm{#2}_{#3#4}}
+    }
+
+%%% TODOs %%%
+\newcommand\todo[1]{\large \textbf{\textcolor{red}{\uppercase{#1}}}\normalsize}
+
+%%% Does not imply symbol %%%
+\newcommand{\notimplies}{\;\not\!\!\!\implies}
+
+%%% Diagonal matrix %%%
+\newcommand{\diag}[1]{
+    \ensuremath{\mathrm{diag}\left(#1\right)}
+}
+
+%%% Real numbers %%%
+\renewcommand{\real}{
+    \ensuremath{\mathbb{R}}
+}

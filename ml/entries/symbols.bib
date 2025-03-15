@@ -1,0 +1,141 @@
+% Encoding: UTF-8
+
+# Reinforcement learning
+
+@symbol{learnRate,
+    name = {\ensuremath{\eta}},
+    description = {learning rate},
+    identifier = {rl}
+}
+
+@symbol{entropy,
+    name = {\ensuremath{\mathrm{H}}},
+    description = {entropy},
+    identifier = {rl}
+}
+
+@symbol{surprise,
+    name = {\ensuremath{\mathrm{S}}},
+    description = {surprise},
+    identifier = {rl}
+}
+
+@symbol{vecObsv,
+    name = {\ensuremath{\bm{o}}},
+    description = {observation vector},
+    identifier = {rl}
+}
+
+@symbol{setStates,
+    name = {\ensuremath{\mathcal{X}}},
+    description = {finite set of possible states},
+    identifier = {rl}
+}
+
+@symbol{setActions,
+    name = {\ensuremath{\mathcal{A}}},
+    description = {finite set of possible actions},
+    identifier = {rl}
+}
+
+@symbol{discFactor,
+    name = {\ensuremath{\gamma}},
+    description = {discount factor $\in [0,1)$},
+    identifier = {rl}
+}
+
+@symbol{fnReward,
+    name = {\ensuremath{r}},
+    description = {\gls{DEF_fnReward}},
+    identifier = {rl}
+}
+
+@symbol{rvReward,
+    name = {\ensuremath{R}},
+    description = {\gls{DEF_rvReward}},
+    identifier = {rl}
+}
+
+@symbol{rvState,
+    name = {\ensuremath{X}},
+    description = {state (\glsxtrshort{rv})},
+    identifier = {rl}
+}
+
+@symbol{rvAction,
+    name = {\ensuremath{A}},
+    description = {action (\glsxtrshort{rv})},
+    identifier = {rl}
+}
+
+@symbol{prStateTransition,
+    name = {\ensuremath{P_{xx'}^a}},
+    description = {state transition probabilities $P(X_{t+1}=\bm{x'}|X_t=\bm{x},A_t=\bm{a})$},
+    identifier = {rl}
+}
+
+@symbol{policy,
+    name = {\ensuremath{\pi}},
+    description = {\gls{DEF_policy}},
+    identifier = {rl}
+}
+
+@symbol{return,
+    name = {\ensuremath{G}},
+    description = {\gls{DEF_return}},
+    identifier = {rl}
+}
+
+@symbol{fnQ,
+    name = {\ensuremath{Q^{\gls{policy}}}},
+    description = {\gls{DEF_fnQ}},
+    identifier = {rl}
+}
+
+@symbol{fnQParam,
+    name = {\ensuremath{Q^{\gls{policy}_{\gls{paramsPolicy}}}}},
+    description = {\gls{DEF_fnQ}, where the policy is parameterized using \gls{paramsPolicy}},
+    identifier = {rl}
+}
+
+@symbol{fnV,
+    name = {\ensuremath{V^{\gls{policy}}}},
+    description = {\gls{DEF_fnV}},
+    identifier = {rl}
+}
+
+@symbol{fnVParam,
+    name = {\ensuremath{V^{\gls{policy}_{\gls{paramsPolicy}}}}},
+    description = {\gls{DEF_fnV}, where the policy is parameterized using \gls{paramsPolicy}},
+    identifier = {rl}
+}
+
+@symbol{fnAdvantage,
+    name = {\ensuremath{A^{\gls{policy}}}},
+    description = {\gls{DEF_fnAdvantage}},
+    identifier = {rl}
+}
+
+@symbol{paramsPolicy,
+    name = {\ensuremath{\bm{\varphi}}},
+    description = {parameters of policy estimate},
+    identifier = {rl}
+}
+
+@symbol{paramsValue,
+    name = {\ensuremath{\bm{\theta}}},
+    description = {parameters of state(-action) value function},
+    identifier = {rl}
+}
+
+@symbol{fnPolicyValue,
+    name = {\ensuremath{j}},
+    description = {\gls{DEF_fnPolicyValue}},
+    identifier = {rl}
+}
+
+@symbol{errorTD,
+    name = {\ensuremath{\delta_\mathrm{TD}}},
+    description = {\glsxtrshort{td} error},
+    identifier = {rl}
+}

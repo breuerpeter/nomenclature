@@ -1,0 +1,14 @@
+\singlespacing
+
+% Print terms
+\printunsrtglossary*[style=alttreegroup]
+{%
+  \renewcommand*{\glstreenamefmt}[1]{\emph{#1}\quad}%
+}
+
+% Print symbols
+\printunsrtglossary[type=symbols,style=alttreegroup]
+
+\newpage
+% Print abbreviations
+\printunsrtglossary[type=abbreviations,style=alttreegroup]

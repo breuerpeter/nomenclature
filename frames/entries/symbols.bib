@@ -1,0 +1,65 @@
+% Encoding: UTF-8
+
+# Reference frames
+
+@symbol{frI,
+    name = {\ensuremath{\mathcal{I}}},
+    description = {inertial reference frame (fixed, stationary)},
+    identifier = {referenceFrames}
+}
+
+@symbol{frIOrigin,
+    name = {\ensuremath{I}},
+    description = {origin of \gls{frI}},
+    identifier = {referenceFrames}
+}
+
+@symbol{frW,
+    name = {\ensuremath{\mathcal{W}}},
+    description = {world reference frame (inertial)},
+    identifier = {referenceFrames}
+}
+
+@symbol{frWOrigin,
+    name = {\ensuremath{W}},
+    description = {origin of \gls{frW}},
+    identifier = {referenceFrames}
+}
+
+@symbol{frB,
+    name = {\ensuremath{\mathcal{B}}},
+    description = {body reference frame (non-inertial) centered in the \gls{cog} (unless specified otherwise)},
+    identifier = {referenceFrames}
+}
+
+@symbol{frBOrigin,
+    name = {\ensuremath{B}},
+    description = {origin of \gls{frB}},
+    identifier = {referenceFrames}
+}
+
+# Frame transformation
+
+@symbol{matPsvRot,
+    name = {\ensuremath{\bm{R}}},
+    description = {passive rotation matrix (\glsxtrshort{dcm})},
+    identifier = {frameTransformation}
+}
+
+@symbol{vecTransl,
+    name = {\ensuremath{\bm{t}}},
+    description = {translation vector},
+    identifier = {frameTransformation}
+}
+
+@symbol{matHomTransf,
+    name = {\ensuremath{\bm{T}}},
+    description = {homogeneous transformation matrix},
+    identifier = {frameTransformation}
+}
+
+@symbol{vecBasis,
+    name = {\ensuremath{\bm{e}}},
+    description = {basis vector of the $x,y$ or $z$ axis of a Cartesian coordinate system},
+    identifier = {frameTransformation}
+}

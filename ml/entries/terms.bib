@@ -1,0 +1,71 @@
+% Encoding: UTF-8
+
+@entry{DEF_fnReward,
+    name = {reward function},
+    description = {mapping $\gls{fnReward}:\gls{setActions}\times\gls{setActions}\to\mathbb{R}$ that assigns a scalar value (reward) to each state-action pair; \gls{fnReward} induces the sequence of rewards $\{\gls{rvReward}_t\}_{t\in\mathbb{N}_0}$, where $\gls{rvReward}_t$ is a \gls{rv} with expected value $\gls{fnReward}(\bm{x}_t,\bm{a}_t)$},
+    identifier = {DEF_rl}
+}
+
+@entry{DEF_rvReward,
+    name = {reward (\glsxtrshort{rv})},
+    description = {the actual reward value received at a time $t$ (denoted $\gls{rvReward}_t$); random due to the stochastic nature of the environment; expected value \gls{fnReward}},
+    identifier = {DEF_rl}
+}
+
+@entry{DEF_return,
+    name = {return (\glsxtrshort{rv})},
+    description = {total discounted reward obtained from time $t$ onwards, given \glsxtrshort{mdp} and policy \gls{policy}},
+    identifier = {DEF_rl}
+}
+
+@entry{DEF_policy,
+    name = {policy},
+    description = {conditional distribution over actions given the state: $P(A_t=\bm{a}|X_t=\bm{x})$},
+    identifier = {DEF_rl}
+}
+
+@entry{DEF_fnPolicyValue,
+    name = {policy value function},
+    description = {expected \gls{DEF_return} when following policy \gls{policy}},
+    identifier = {DEF_rl}
+}
+
+@entry{DEF_fnV,
+    name = {state value function (V-function)},
+    description = {expected \gls{DEF_return} when starting from state $\bm{x}$ at time $t$, and then following policy \gls{policy}},
+    identifier = {DEF_rl}
+}
+
+@entry{DEF_fnQ,
+    name = {state-action value function (Q-function)},
+    description = {expected \gls{DEF_return} when starting from state $\bm{x}$ at time $t$, taking action $\bm{a}$, and then following policy \gls{policy}},
+    identifier = {DEF_rl}
+}
+
+@entry{DEF_fnAdvantage,
+    name = {advantage function},
+    description = {advantage of picking action $\bm{a}\in\gls{setActions}$ in state $\bm{x}\in\gls{setStates}$ over simply following the policy $\gls{policy}$},
+    identifier = {DEF_rl}
+}
+
+@entry{DEF_surprise,
+    name = {surprise},
+    description = {quantifies the unexpectedness/unpredictability associated with the occurence of a particular event; if an event is highly probable, the surprise is low because the event is expected, and vice versa},
+    identifier = {DEF_rl}
+}
+
+@entry{DEF_entropy,
+    name = {entropy},
+    description = {average surprise about samples from the distribution; quantifies the "informativeness" of a distribution. A smaller entropy means $p$ is more concentrated $p$ and a large entropy indicates a diffuse distribution (we are less certain that the samples $x\sim p$)},
+    identifier = {DEF_rl}
+}
+
+@entry{DEF_crossEntropy,
+    name = {cross-entropy},
+    description = {expected surprise in samples from one distribution with respect to another},
+    identifier = {DEF_rl}
+}
+
+
+
+

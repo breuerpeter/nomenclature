@@ -1,0 +1,91 @@
+%%% Required packages for nomenclature:
+
+%\usepackage{amssymb}
+%\usepackage{amsmath,bm}
+%\usepackage[colorlinks]{hyperref}
+%\usepackage[doublespacing]{setspace}
+\usepackage[record,
+            section,
+            symbols,                              % create list of symbols
+            abbreviations,                        % create list of abbreviations
+            nonumberlist,                         % don't show location list
+            %nogroupskip,                         % remove vertical spacing between groups
+            stylemods={list,tree,topic,longextra} % load glossary-longextra.sty, etc.
+            ]{glossaries-extra}
+
+% Guide: https://mirror.init7.net/ctan/support/bib2gls/bib2gls-begin.pdf
+
+% Abbreviations include acronyms, initialisms and contractions
+% Acronyms: word formed from the initial letters of other words; pronounced as a word rather than as a series of letters; e.g. laser
+% Initialisms: formed from initial letters of words where the letters are sounded out; e.g. HTML
+
+% TODO: add units to symbols
+
+% Capitalize first letter of terms
+\renewcommand{\glsnamefont}[1]{\makefirstuc{#1}}
+
+% Compute the widest entry just for the current glossary
+\renewcommand{\glossarypreamble}{\glsfindwidesttoplevelname[\currentglossary]}
+
+\renewcommand{\glstopicMarker}[1]{%
+ \pdfbookmark[2]{\glsentryname{#1}}{\currentglossary.#1}%
+}
+
+\renewcommand{\glstreePreHeader}[2]{%
+ \pdfbookmark[2]{#2}{\currentglossary.#1}%
+}
+
+\newglossarystyle{mystyle}{%
+  \glossarystyle{list}%
+  \renewcommand*{\glossaryentryfield}[5]{%
+    \item[\glsentryitem{##1}\glstarget{##1}{##2}]%
+       \hspace{1cm}##3\space ##5}%
+}
+
+% Show group headings
+
+\renewcommand*{\glslongextraGroupHeading}[2]{%
+  \glsxtrgetgrouptitle{#2}{\thisgrptitle}%
+  \glslongextraHeaderFmt\thisgrptitle
+  \tabularnewline*\noalign{\vskip\normalbaselineskip}%
+  \hline
+}
+
+
+%\newglossary*{agency}{Agencies}
+%\newglossary*{initialism}{Abbreviations}
+
+\setabbreviationstyle{short-long-desc}
+\setabbreviationstyle[acronym]{short-long}
+
+% Commands for loading and configuring entries from .bib files
+
+\newcommand{\importSymbols}[2]{
+  \GlsXtrLoadResources[
+    src={nomenclature/#1/entries/symbols},
+    type=symbols,
+    group=#2,
+    selection={all},
+    set-widest
+  ]
+}
+
+\newcommand{\importTerms}[2]{
+  \GlsXtrLoadResources[
+    src={nomenclature/#1/entries/terms},
+    type=main,
+    group=#2,
+    selection={all},
+    set-widest
+  ]
+}
+
+\newcommand{\importAbbrvs}[2]{
+  \GlsXtrLoadResources[
+    src={nomenclature/#1/entries/abbreviations},
+    type=abbreviations,
+    group=#2,
+    selection={all},
+    field-aliases={identifier=type}
+  ]
+}

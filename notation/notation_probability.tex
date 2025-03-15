@@ -1,0 +1,62 @@
+\begin{table}[H]
+    \begin{tabularx}{\textwidth}{
+        >{\RaggedRight}m{7.0cm}
+        >{\RaggedRight\arraybackslash}m{6.7cm}}
+        \toprule
+        \textbf{Property} &
+        \textbf{Notation}
+        \\
+        \midrule
+        Random variable (RV), state &
+        $X$, $x$
+        \\
+        \addlinespace[1ex]
+        Probability &
+        $P(X=x)=:P(X)$
+        \\
+        \addlinespace[1ex]
+        Conditional probability &
+        $P(X=x|Y=y)=:P(X|Y)$
+        \\
+        \addlinespace[1ex]
+        Expectation of a continuous RV &
+        $\mathbb{E}_{{\color{red}x}\sim {\color{brown}f(x)}}[{\color{blue}X}]=\int_{-\infty}^{\infty}{\color{blue}x}\ {\color{brown}f(x)}\ {\color{red}dx}=:\mathbb{E}[X]=:\mu$
+        \\
+        \addlinespace[1ex]
+        Expectation of a discrete RV &
+        $\mathbb{E}_{{\color{red}x}\sim {\color{brown}p(x)}}[{\color{blue}X}]=\sum_{\color{red}i} {\color{blue}x_i}\ {\color{brown}p(x_i)}=:\mathbb{E}[X]=:\mu$
+        \\
+        \addlinespace[1ex]
+        Expectation (continuous RV) of a function $g$ &
+        $\mathbb{E}_{{\color{red}x}\sim {\color{brown}f(x)}}[{\color{blue}g(x)}]=\int_{-\infty}^\infty {\color{blue}g(x)}{\color{brown}f(x)}\ {\color{red}dx}$
+        \\
+        \addlinespace[1ex]
+        Expectation (discrete RV) of a function $g$ &
+        $\mathbb{E}_{{\color{red}x}\sim {\color{brown}p(x)}}[{\color{blue}g(x)}]=\sum_{\color{red}i} {\color{blue}g(x_i)}{\color{brown}p(x_i)}$
+        \\
+        \addlinespace[1ex]
+        Variance &
+        $\mathrm{Var}[X]=:\sigma^2$
+        \\
+        \addlinespace[1ex]
+        Standard deviation &
+        $\mathrm{SD}[X]=:\sigma$
+        \\
+        \addlinespace[1ex]
+        Probability mass function\parnote{for discrete RVs} &
+        $p_X(x)=:p(x)$
+        \\
+        \addlinespace[1ex]
+        Probability density function\parnote{for continuous RVs} &
+        $f_X(x)=:f(x)$
+        \\
+        \addlinespace[1ex]
+        Cumulative distribution function &
+        $F_X(x)=:F(x)$
+        \\
+        \bottomrule
+        \addlinespace[1ex]
+    \end{tabularx}
+    \parnotes
+    \parnoteclear
+\end{table}
