@@ -1,4 +1,4 @@
-# Nomenclature-Notation
+# notation
 
 ## How to use
 
@@ -10,4 +10,4 @@
 
 ## Previewing
 
-Simply build `config/notation/preview.tex` to preview all available notation sections
+Simply build `preview.tex` to preview all available notation sections
